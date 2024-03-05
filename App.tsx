@@ -17,10 +17,10 @@ function App(): React.JSX.Element {
       <Image
         source={require('./src/assets/images/crono.png')}
       />
-      <Text style={styles.timer}>00:00:00</Text>
+      <Text style={styles.timer}>{ formattedTime}</Text>
       <View style={styles.btnArea}>
       <TouchableOpacity style={styles.btn}>
-        <Text style={styles.btnTexto}>Iniciar</Text>
+        <Text style={styles.btnTexto}>{ botao }</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.btn}>
         <Text style={styles.btnTexto}>Limpar</Text>
